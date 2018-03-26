@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+archivesBaseName = 'HyperWallet'
+version = '1.0-SNAPSHOT' 
+
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.hyperwallet.rest.ws.HyperWalletWS'
+    }
+}
